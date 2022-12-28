@@ -6,9 +6,9 @@ import SidebarMenuItem from "./SidebarMenuItem";
 
 export default function Sidebar() {
   return (
-    <div>
+    <div className="hidden sm:flex flex-col p-2 xl:items-start fixed h-full">
       {/* Twitter Logo */}
-      <div className="hoverEffect">
+      <div className="hoverEffect p-0 hover:bg-blue-100 xl:px-1">
         <Image
           width="50"
           height="50"
@@ -18,7 +18,7 @@ export default function Sidebar() {
       </div>
 
       {/* Menu */}
-      <div>
+      <div className="mt-4 mb-2.5 xl:items-start">
         <SidebarMenuItem text="Home" Icon={HomeIcon} active/>
         <SidebarMenuItem text="Explore" Icon={HashtagIcon} />
         <SidebarMenuItem text="Notifications" Icon={BellIcon} />
@@ -35,13 +35,13 @@ export default function Sidebar() {
 
       {/* Mini-Profile */}
 
-    <div className="hoverEffect">
-      <Image width="100" height="100" src="/profile-picture.jpg" alt="User Image" ></Image>
-      <div className="">
-      <h4>Andrew Bungcayao</h4>
-      <p>@thedev_andrew</p>
+    <div className="hoverEffect text-gray-700 flex items-center justify-center xl:justify-start mt-auto">
+      <Image className="h-16 w-16 rounded-full xl:mr-2" width="100" height="100" src="/profile-picture.jpg" alt="User Image" ></Image>
+      <div className="leading-5 hidden xl:inline">
+      <h4 className="font-bold">Andrew Bungcayao</h4>
+      <p className="text-gray-500">@thedev_andrew</p>
       </div>
-      <DotsHorizontalIcon className="h-5" />
+      <DotsHorizontalIcon className="h-5 xl:ml-8 hidden xl:inline" />
     </div>
 
     </div>
