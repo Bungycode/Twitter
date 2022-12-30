@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/Image";
 import { HomeIcon } from "@heroicons/react/solid";
 import { BellIcon, BookmarkIcon, ClipboardIcon, DotsHorizontalIcon, DotsCircleHorizontalIcon, HashtagIcon, InboxIcon, UserIcon } from "@heroicons/react/outline";
 
@@ -36,7 +36,7 @@ export default function Sidebar() {
       {/* Mini-Profile */}
 
     <div className="hoverEffect text-gray-700 flex items-center justify-center xl:justify-start mt-auto">
-      <Image className="h-16 w-16 rounded-full xl:mr-2" width="100" height="100" src="/profile-picture.jpg" alt="User Image" ></Image>
+      <Image className="h-16 w-16 rounded-full xl:mr-2" width="100" height="100" src="/profile-picture.jpg" alt="User-img" priority></Image>
       <div className="leading-5 hidden xl:inline">
       <h4 className="font-bold">Andrew Bungcayao</h4>
       <p className="text-gray-500">@thedev_andrew</p>
