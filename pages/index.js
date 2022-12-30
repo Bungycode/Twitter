@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Head from "next/Head";
 
 import Feed from "../Components/Feed";
 import Sidebar from "../Components/Sidebar";
